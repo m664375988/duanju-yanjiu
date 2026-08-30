@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>可灵 / 即梦角色一致性：让 AI 人物不再「变脸」的 4 个技巧</title>
+<meta name="description" content="76% 的 AI 短剧创作者把「换个镜头就变脸」列为第一大痛点。本文讲清根因，并给 4 个经过实战验证的一致性方案。">
+<link rel="canonical" href="https://m664375988.github.io/duanju-yanjiu/posts/可灵 / 即梦角色一致性：让 AI 人物不再「变脸」的 4 个技巧.html">
+<meta property="og:title" content="可灵 / 即梦角色一致性：让 AI 人物不再「变脸」的 4 个技巧">
+<meta property="og:description" content="76% 的 AI 短剧创作者把「换个镜头就变脸」列为第一大痛点。本文讲清根因，并给 4 个经过实战验证的一致性方案。">
+<meta property="og:type" content="article">
+<style>
+:root{--bg:#ffffff;--fg:#1f2328;--muted:#6b7280;--brand:#e11d48;--brand2:#fb7185;--line:#e5e7eb;--card:#f9fafb;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--fg);line-height:1.75;font-size:17px}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+header.site{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff,#fff)}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+.topbar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:22px;font-weight:800;color:var(--brand);letter-spacing:.5px}
+.nav a{margin-left:18px;color:var(--muted);font-size:15px}
+.nav a:hover{color:var(--brand)}
+main{padding:40px 0 60px}
+.hero{margin-bottom:36px}
+.hero h1{font-size:30px;line-height:1.3;margin-bottom:10px}
+.hero p{color:var(--muted);font-size:16px}
+.post-list{display:flex;flex-direction:column;gap:22px}
+.card{border:1px solid var(--line);border-radius:14px;padding:20px 22px;background:var(--card);transition:.15s}
+.card:hover{border-color:var(--brand2);box-shadow:0 6px 20px rgba(225,29,72,.08)}
+.card h2{font-size:20px;margin-bottom:8px}
+.card .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
+.card p{color:#374151;font-size:15px}
+.tags{margin-top:10px}
+.tag{display:inline-block;background:#ffe4e6;color:var(--brand);font-size:12px;padding:2px 10px;border-radius:999px;margin-right:6px}
+article h1{font-size:30px;line-height:1.3;margin-bottom:8px}
+article .meta{color:var(--muted);font-size:14px;margin-bottom:26px;border-bottom:1px solid var(--line);padding-bottom:16px}
+article h2{font-size:24px;margin:34px 0 12px}
+article h3{font-size:19px;margin:24px 0 10px}
+article p{margin:14px 0}
+article ul,article ol{margin:14px 0 14px 24px}
+article li{margin:8px 0}
+article blockquote{border-left:4px solid var(--brand2);background:#fff5f6;padding:12px 16px;margin:18px 0;border-radius:0 10px 10px 0;color:#7f1d2b}
+article code{background:#f1f5f9;padding:2px 6px;border-radius:6px;font-size:14px}
+article pre{background:#0f172a;color:#e2e8f0;padding:16px;border-radius:10px;overflow:auto;font-size:14px;margin:16px 0}
+article pre code{background:none;color:inherit;padding:0}
+.hint{background:#fffbeb;border:1px solid #fde68a;color:#92400e;padding:12px 16px;border-radius:10px;margin:18px 0;font-size:15px}
+.related{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px 14px 34px;margin:30px 0}
+.related li{margin:7px 0}
+.related a{color:var(--brand)}
+footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center;padding:24px 0}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap topbar">
+<a class="logo" href="/">短剧研究所</a>
+<nav class="nav"><a href="/">首页</a><a href="/about.html">关于</a></nav>
+</div></header>
+<main><div class="wrap">
+<article>
+<h1>可灵 / 即梦角色一致性：让 AI 人物不再「变脸」的 4 个技巧</h1>
+<div class="meta">2026-08-09 · AI 工具 · 短剧研究所</div>
+
+<p>同一个角色，第一幕是黑长直东方女孩，第二幕变金发碧眼——这是 AI 视频圈最经典的「身份漂移」。根因很直白：<strong>AI 视频模型是无状态的</strong>，每次生成独立运行，不保留角色记忆；随机种子不同、描述模糊、场景一变，模型就会重新「编」一张脸。</p>
+
+<h2>一、参考图驱动（最稳，五星推荐）</h2>
+<p>先出一张<strong>角色定妆照</strong>（正面、半身高清、中性表情、纯色背景），后续所有镜头都用「图生视频」模式上传这张图。角色外貌由参考图决定，提示词只写动作和场景，<strong>不重复角色外貌</strong>。这是一致性最高、门槛最低的方案。</p>
+
+<h2>二、角色卡片 + 外貌锚点</h2>
+<p>建立一份固定文字档案，每个镜头提示词开头<strong>粘贴完全相同的角色描述段</strong>：</p>
+<pre><code>角色 C01，25 岁亚洲女性，鹅蛋脸，杏仁眼，右眼下方浅色小痣，
+黑色齐肩直发、三七侧分，银色圆形耳环，白色丝质衬衫。</code></pre>
+<p>关键：<strong>不凭感觉改写</strong>——「齐肩直发」不要改成「中长发」，不要交替用「清秀」「妩媚」等主观词，每个词都会让模型重新推断面部。</p>
+
+<h2>三、用工具原生角色锁定</h2>
+<ul>
+<li><strong>可灵 3.0</strong>：多模态参考 / Character ID，上传参考素材即可提取并绑定主体视觉特征，转头、侧脸、遮挡也能保持连贯。</li>
+<li><strong>Seedance 2.0</strong>：锚点与主导技术，一张参考图锁角色「DNA」，切场景也不变形。</li>
+<li><strong>PixVerse C1</strong>：首尾帧控制 + 参考生视频，专攻跨镜头一致性。</li>
+</ul>
+
+<h2>四、负面提示词 + 降低动作幅度</h2>
+<p>在提示词里加负面约束抑制变化，并让动作「轻」起来：</p>
+<pre><code>负面：different face, changed hairstyle, changed clothes,
+extra fingers, age change, distorted features.
+动作：轻微点头 / 缓慢推进 / 自然呼吸感（不写 360° 环绕、大笑、张嘴说话）</code></pre>
+<div class="hint">总结：①图生视频比文生视频稳得多；②锁定提示词要<strong>逐字一致</strong>，改一个词就开始漂移；③口播类别强求口型，后期配音 + 字幕配合更靠谱。</div>
+
+<div class="tags" style="margin-top:30px"><span class="tag">角色一致性</span><span class="tag">可灵</span><span class="tag">即梦</span><span class="tag">AI视频</span><span class="tag">身份漂移</span><span class="tag">图生视频</span><span class="tag">定妆照</span></div>
+<h2>相关阅读</h2><ul class="related"><li><a href="/duanju-yanjiu/posts/ai-shipin-gongju-duizhen.html">AI 视频工具怎么选：即梦 / 可灵 / 海螺 / Runway 的真实分工</a></li><li><a href="/duanju-yanjiu/posts/jimeng-tishi-ci-gongshi.html">即梦 AI 提示词怎么写：从「让人物走过来」到电影感万能公式</a></li><li><a href="/duanju-yanjiu/posts/duanju-bianxian-qushi.html">短剧怎么变现：平台分成、小说推文、商单与付费解锁四条路</a></li></ul>
+<p style="margin-top:24px"><a href="/">← 返回首页</a></p>
+</article>
+</div></main>
+<footer class="site">© 2026 短剧研究所 · 用 AI 把短剧制作门槛打到地板价</footer>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://m664375988.github.io/duanju-yanjiu/sitemap.xml
